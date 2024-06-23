@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Appointment Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="block">
+                <h2>Дата записи</h2>
+                <input type="date" id="appointment-date" class="form-control">
+            </div>
+            <div class="block">
+                <h2>Специалисты</h2>
+                <input type="text" id="filter-specialists" class="form-control" placeholder="Поиск">
+                <div id="specialists-list" class="specialists-list">
+                    <div class="specialist-group">
+                        <input type="checkbox" id="spec1" value="Иванова Н.С.">
+                        <label for="spec1">Иванова Н.С.</label>
+                    </div>
+                    <div class="specialist-group">
+                        <input type="checkbox" id="spec2" value="Ароничкова-Буланова Л.И.">
+                        <label for="spec2">Ароничкова-Буланова Л.И.</label>
+                    </div>
+                    <div class="specialist-group">
+                        <input type="checkbox" id="spec3" value="Харитонова-Веничит П.И.">
+                        <label for="spec3">Харитонова-Веничит П.И.</label>
+                    </div>
+                    <div class="specialist-group">
+                        <input type="checkbox" id="spec4" value="Степанова Л.А.">
+                        <label for="spec4">Степанова Л.А.</label>
+                    </div>
+                    <div class="specialist-group">
+                        <input type="checkbox" id="spec5" value="Рускова-Перепелкина П.И.">
+                        <label for="spec5">Рускова-Перепелкина П.И.</label>
+                    </div>
+                    <div class="specialist-group">
+                        <input type="checkbox" id="spec6" value="Петрова М.И.">
+                        <label for="spec6">Петрова М.И.</label>
+                    </div>
+                    <div class="specialist-group">
+                        <input type="checkbox" id="spec7" value="Алентьева В.И.">
+                        <label for="spec7">Алентьева В.И.</label>
+                    </div>
+                    <div class="specialist-group">
+                        <input type="checkbox" id="spec8" value="Сидорова П.П.">
+                        <label for="spec8">Сидорова П.П.</label>
+                    </div>
+                </div>
+            </div>
+            <button id="analytics-button" class="btn">Перейти к аналитике</button>
+        </div>
+        <div class="main-content">
+            <div class="block">
+                <h1>Расписание специалистов</h1>
+                <div id="schedule-grid" class="schedule-grid"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
